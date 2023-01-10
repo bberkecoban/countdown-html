@@ -1,0 +1,130 @@
+.banner-countdown-wrap .title {
+	font-size: 26px;
+	margin-bottom: 15px;
+	letter-spacing: -0.01em;
+}
+.banner-countdown-wrap .coming-time {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.banner-countdown-wrap .coming-time .time-count {
+	min-width: 162px;
+	min-height: 96px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	position: relative;
+	margin: 20px 17.5px 0;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	background: #830707;
+	border: 1px solid rgba(255, 255, 255, 0.04);
+	border-radius: 5px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+.banner-countdown-wrap .coming-time .time-count span {
+	font-size: 35px;
+	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 12px;
+	display: block;
+	font-family: 'Poppins',sans-serif;
+	letter-spacing: 1px;
+}
+.banner-countdown-wrap .coming-time .time-count.hour span {
+	color: #ffffff;
+}
+.banner-countdown-wrap .coming-time .time-count.min span {
+	color: #ffffff;
+}
+.banner-countdown-wrap .coming-time .time-count.sec span {
+	color: #ffffff;
+}
+@keyframes alltuchtopdown {
+  0% {
+        transform: rotateX(0deg) translateY(0px);
+    }
+  50% {
+        transform: rotateX(0deg) translateY(-30px);
+    }
+  100% {
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
+@keyframes leftToRight {
+  0% {
+        transform: rotateX(0deg) translateX(0px);
+    }
+  50% {
+        transform: rotateX(0deg) translateX(50px);
+    }
+  100% {
+        transform: rotateX(0deg) translateX(0px);
+    }
+}
+.countdown-area-two .countdown-wrap::before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 80%;
+	background: #00C4F4;
+	opacity: 0.08;
+	border-radius: 20px;
+	z-index: -1;
+}
+.countdown-area-two .countdown-wrap .title {
+	color: #030B15;
+	letter-spacing: -0.01em;
+	font-size: 26px;
+	margin-bottom: 35px;
+	line-height: 1.88;
+}
+.ClassyCountdown-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 0;
+	column-gap: 115px;
+	row-gap: 30px;
+}
+.ClassyCountdown-wrapper > div > div:not(:last-child) {
+    display: block !important;
+}
+.ClassyCountdown-wrapper > div > div canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+.ClassyCountdown-value {
+	display: block;
+	line-height: 0;
+}
+.ClassyCountdown-value>div {
+	display: block;
+	text-align: center;
+	line-height: 1;
+	margin-bottom: 5px;
+	font-size: 35px;
+	font-weight: 600;
+	color: #030B15;
+	font-family: 'Poppins', sans-serif;
+	margin-top: -95px;
+}
+.ClassyCountdown-value > span {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+	font-family: 'Outfit';
+    color: #030B15;
+    font-weight: 500;
+    line-height: 1;
+}
